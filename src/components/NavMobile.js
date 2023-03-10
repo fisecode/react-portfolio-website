@@ -76,6 +76,21 @@ const NavMobile = () => {
         >
           <XMarkIcon className="w-8 h-8" />
         </div>
+        {navigation.map((item, index) => {
+          return (
+            <li key={index} className="mb-8">
+              <Link
+                to={item.href}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="text-xl cursor-pointer capitalize"
+              >
+                {item.name}
+              </Link>
+            </li>
+          );
+        })}
       </motion.ul>
     </nav>
   );
