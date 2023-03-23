@@ -2,7 +2,7 @@ import React from "react";
 
 // import woman image
 import WomanImg from "../assets/img/banner-woman2.webp";
-import MyImg from "../assets/img/fikri.png";
+// import MyImg from "../assets/img/fikri.png";
 
 const Hero = () => {
   return (
@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
           {/* right side */}
           <div className="items-end justify-end flex-1 hidden h-full lg:flex">
-            <img src={MyImg} alt="" />
+            <img src={WomanImg} alt="" />
           </div>
         </div>
       </div>
